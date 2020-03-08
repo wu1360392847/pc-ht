@@ -1,0 +1,16 @@
+/** css 样式重置*/
+html,body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {margin:0;padding:0;box-sizing:border-box;}
+html,body {height:100%;font-size:16px;background:#fff;color:#000;overflow:-moz-scrollbars-vertical;}
+body,button,input,select,textarea {color:#000;font-family:Helvetica, Arial, sans-serif, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', '宋体', Tahoma;}
+dl,dt,dd,ul,ol,li {list-style:none;}
+a {text-decoration:none;color:normal;}
+a:hover {text-decoration:underline;}
+legend {color:#000;}
+fieldset,img {border:0;}
+table {border-collapse:collapse;border-spacing:0;}
+img {-ms-interpolation-mode:bicubic;}
+button {outline:none;}
+input {border:1px solid #000;outline:none;}
+button,input,select,textarea {font-size:100%;}
+textarea {resize:vertical;}
+label,button {cursor:pointer;}
