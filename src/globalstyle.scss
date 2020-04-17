@@ -1,8 +1,6 @@
 /**
 * scss 全局变量
 *
-* 已在vue.config.js挂载到全局
-*
 * 使用:
 * color: $font-color-small;
 *
@@ -48,39 +46,6 @@ $itme-color-primary:#fa436a;
 $itme-color-success: #4cd964;
 $itme-color-warning: #f0ad4e;
 $itme-color-error: #dd524d;
-
-
-/* 清除浮动 */
-.clearfloat {zoom:1;}
-.clearfloat:before {text-decoration:none;}
-.clearfloat:after {content:'.';display:block;clear:both;height:0;visibility:hidden;}
-
-/* 公共样式 */
-.left {
-  float:left;
-}
-.right {
-  float:right;
-}
-.show {
-  display:none;
-}
-.block {
-  display:block;
-}
-.inline {
-  display:inline;
-}
-.inlineblock {
-  display:inline-block;
-}
-.error {
-  color:#F00;
-}
-.wordwrap {
-  word-break:break-all;
-  word-wrap:break-word;
-}
 
 /* 更改element-ui 默认css样式设置 */
 

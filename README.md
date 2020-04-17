@@ -1,4 +1,5 @@
 # itme
+  基于VUE + element-ui 的简单的后台管理系统大体框架
 
 ## Project setup
 ```
@@ -25,5 +26,11 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 其它
+```
+
+环境变量  ===》  process.env.NODE_ENV
+
+在 src/requests 文件中已配置，并分开api进行统一管理
+
+```

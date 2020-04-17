@@ -7,8 +7,7 @@ Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes
-}
-)
+})
 
 router.beforeEach((to, from, next) => {
   // 路由发生变化修改页面title
@@ -19,7 +18,7 @@ router.beforeEach((to, from, next) => {
   }
   // 判断是否需要权限才能访问
   if (to.meta.isAuthRequired === true) {
-    // 判断是否登录
+    // 判断是否登录 需自行写
     if (store.getters.isLogin === true) {
       next()
     } else {

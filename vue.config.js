@@ -1,7 +1,6 @@
 const path = require("path");
 
-// 移除console.log 的插件
-// const UglifyPlugin = require("uglifyjs-webpack-plugin");
+// 移除 console.log 的插件
 const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
@@ -97,7 +96,7 @@ module.exports = {
           cacheGroups: {
             vendor: {
               test: /[\\/]node_modules[\\/]/,
-              name (module) {
+              name(module) {
                 // get the name. E.g. node_modules/packageName/not/this/part.js
                 // or node_modules/packageName
                 const packageName = module.context.match(
@@ -167,7 +166,7 @@ module.exports = {
         // 旧
         // data: `@import "~@/globalstyle.scss";`
         // 新
-        prependData: `@import "~@/globalstyle.scss";`
+        // prependData: `@import "~@/globalstyle.scss";`
       }
     }
   },

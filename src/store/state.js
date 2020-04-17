@@ -3,8 +3,8 @@
  */
 
 const state = {
-  // 测试vueX
-  ceshi: '123'
+  // 测试 vueX
+  ceshi: '测试 vueX'
 }
 
 export default state

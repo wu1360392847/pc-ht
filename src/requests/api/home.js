@@ -3,17 +3,12 @@
 */
 import { get, post } from '../index'
 
-//  示例
-export const getSecurityCode2 = () => {
-  return get('/api/get_captcha')
-}
-
 // get
-export const lotteryListTitle = lotteryid => {
-  return get(`/methodtitle/getListTitle?lottery_id=${lotteryid}`)
+export const gets = lotteryid => {
+  return get(`/ceshi?id=${lotteryid}`)
 }
 
 // post
-export const ordersAnOrder = anorder => {
-  return post('/orders/anOrder', anorder)
+export const posts = anorder => {
+  return post('/ceshi', anorder)
 }

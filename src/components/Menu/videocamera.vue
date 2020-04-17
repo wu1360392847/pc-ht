@@ -1,5 +1,5 @@
 <template>
-  <div class="user">影像志</div>
+  <div class="user">影像管理</div>
 </template>
 
 <script>

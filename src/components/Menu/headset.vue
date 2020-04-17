@@ -1,5 +1,5 @@
 <template>
-  <div class="user">媒体师大</div>
+  <div class="user">媒体管理</div>
 </template>
 
 <script>

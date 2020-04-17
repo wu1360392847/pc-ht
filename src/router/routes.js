@@ -2,31 +2,6 @@
  * 这里用于配置vue各种单页面级组件路由地址
  */
 
-const Login = () => import('@/views/Login.vue')
-const About = () => import('@/views/About.vue')
-
-// 一级菜单
-const user = () => import('../components/Menu/user.vue')
-const house = () => import('../components/Menu/house.vue')
-const view = () => import('../components/Menu/view.vue')
-const videocamera = () => import('../components/Menu/videocamera.vue')
-const headset = () => import('../components/Menu/headset.vue')
-const edit = () => import('../components/Menu/edit.vue')
-const receiving = () => import('../components/Menu/receiving.vue')
-const notebook = () => import('../components/Menu/notebook.vue')
-const phoneoutline = () => import('../components/Menu/phoneoutline.vue')
-const guide = () => import('../components/Menu/guide.vue')
-const folderopened1 = () => import('../components/Menu/folderopened1.vue')
-const folderopened2 = () => import('../components/Menu/folderopened2.vue')
-const folderopened3 = () => import('../components/Menu/folderopened3.vue')
-const folderopened4 = () => import('../components/Menu/folderopened4.vue')
-const dateset = () => import('../components/Menu/dateset.vue')
-
-// 个人信息，修改密码
-const mymessage = () => import('../components/PersonalCenter/mymessage.vue')
-const mypassword = () => import('../components/PersonalCenter/mypassword.vue')
-
-
 export default [
   {
     // 请求路径,这里配置为重定向
@@ -40,8 +15,7 @@ export default [
   {
     path: '/login',
     name: 'login',
-    component: Login,
-
+    component: () => import('@/views/Login.vue'),
     meta: {
       isNav: true,
       title: '登录',
@@ -51,7 +25,7 @@ export default [
   {
     path: '/about',
     name: 'about',
-    component: About,
+    component: () => import('@/views/About.vue'),
     meta: {
       isNav: true,
       title: ' ',
@@ -67,7 +41,7 @@ export default [
       {
         path: '/about/user',
         name: 'user',
-        component: user,
+        component: () => import('../components/Menu/user.vue'),
         meta: {
           isNav: true,
           title: '个人信息',
@@ -77,7 +51,7 @@ export default [
       {
         path: '/about/house',
         name: 'house',
-        component: house,
+        component: () => import('../components/Menu/house.vue'),
         meta: {
           isNav: true,
           title: '首页',
@@ -87,37 +61,37 @@ export default [
       {
         path: '/about/view',
         name: 'view',
-        component: view,
+        component: () => import('../components/Menu/view.vue'),
         meta: {
           isNav: true,
-          title: '资讯管理',
+          title: '管理',
           isAuthRequired: false
         },
       },
       {
         path: '/about/videocamera',
         name: 'videocamera',
-        component: videocamera,
+        component: () => import('../components/Menu/videocamera.vue'),
         meta: {
           isNav: true,
-          title: '影像志',
+          title: '影像管理',
           isAuthRequired: false
         },
       },
       {
         path: '/about/headset',
         name: 'headset',
-        component: headset,
+        component: () => import('../components/Menu/headset.vue'),
         meta: {
           isNav: true,
-          title: '媒体师大',
+          title: '媒体管理',
           isAuthRequired: false
         },
       },
       {
         path: '/about/edit',
         name: 'edit',
-        component: edit,
+        component: () => import('../components/Menu/edit.vue'),
         meta: {
           isNav: true,
           title: '评论管理',
@@ -127,7 +101,7 @@ export default [
       {
         path: '/about/receiving',
         name: 'receiving',
-        component: receiving,
+        component: () => import('../components/Menu/receiving.vue'),
         meta: {
           isNav: true,
           title: '推送管理',
@@ -137,7 +111,7 @@ export default [
       {
         path: '/about/notebook',
         name: 'notebook',
-        component: notebook,
+        component: () => import('../components/Menu/notebook.vue'),
         meta: {
           isNav: true,
           title: '用户管理',
@@ -147,7 +121,7 @@ export default [
       {
         path: '/about/phoneoutline',
         name: 'phoneoutline',
-        component: phoneoutline,
+        component: () => import('../components/Menu/phoneoutline.vue'),
         meta: {
           isNav: true,
           title: '联系电话',
@@ -157,7 +131,7 @@ export default [
       {
         path: '/about/guide',
         name: 'guide',
-        component: guide,
+        component: () => import('../components/Menu/guide.vue'),
         meta: {
           isNav: true,
           title: '版本管理',
@@ -167,7 +141,7 @@ export default [
       {
         path: '/about/folderopened1',
         name: 'folderopened1',
-        component: folderopened1,
+        component: () => import('../components/Menu/folderopened1.vue'),
         meta: {
           isNav: true,
           title: '图文素材',
@@ -177,7 +151,7 @@ export default [
       {
         path: '/about/folderopened2',
         name: 'folderopened2',
-        component: folderopened2,
+        component: () => import('../components/Menu/folderopened2.vue'),
         meta: {
           isNav: true,
           title: '图片素材',
@@ -187,7 +161,7 @@ export default [
       {
         path: '/about/folderopened3',
         name: 'folderopened3',
-        component: folderopened3,
+        component: () => import('../components/Menu/folderopened3.vue'),
         meta: {
           isNav: true,
           title: '音频素材',
@@ -197,7 +171,7 @@ export default [
       {
         path: '/about/folderopened4',
         name: 'folderopened4',
-        component: folderopened4,
+        component: () => import('../components/Menu/folderopened4.vue'),
         meta: {
           isNav: true,
           title: '视屏素材',
@@ -207,7 +181,7 @@ export default [
       {
         path: '/about/dateset',
         name: 'dateset',
-        component: dateset,
+        component: () => import('../components/Menu/dateset.vue'),
         meta: {
           isNav: true,
           title: '常规管理',
@@ -218,7 +192,7 @@ export default [
       {
         path: '/about/mymessage',
         name: 'mymessage',
-        component: mymessage,
+        component: () => import('../components/PersonalCenter/mymessage.vue'),
         meta: {
           isNav: true,
           title: '个人信息',
@@ -228,7 +202,7 @@ export default [
       {
         path: '/about/mypassword',
         name: 'mypassword',
-        component: mypassword,
+        component: () => import('../components/PersonalCenter/mypassword.vue'),
         meta: {
           isNav: true,
           title: '修改密码',

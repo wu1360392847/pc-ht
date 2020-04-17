@@ -7,7 +7,7 @@
           <el-col :span="8">
             <div class="grid-content grid-content-logo">
               <div class="content-logo">
-                <img src="../assets/img/logo.jpg" />
+                <img src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg" />
               </div>
               <div class="content-click-menu">
                 <i class="el-icon-s-fold" v-if="isCollapse" @click="isCollapse = false"></i>
@@ -23,9 +23,9 @@
               <el-dropdown trigger="click" @command="handleCommand">
                 <div class="content-user el-dropdown-link">
                   <div class="content-user-img">
-                    <el-avatar src="../assets/img/welcome.png"></el-avatar>
+                    <el-avatar src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg"></el-avatar>
                   </div>
-                  <div class="content-user-name">神器的东西</div>
+                  <div class="content-user-name">用户名称</div>
                 </div>
                 <el-dropdown-menu slot="dropdown" style="width:135px;top:45px;">
                   <el-dropdown-item style="line-height: 45px;" command="a">个人信息</el-dropdown-item>
@@ -48,10 +48,10 @@
               <div class="user-box" :style="isCollapse ? 'display: none' : ''">
                 <div class="box-top">
                   <div class="head-portrait">
-                    <img src="../assets/img/logo.jpg" alt />
+                    <img src="https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg" alt />
                   </div>
                   <div class="head-name">
-                    <div class="names">哒哒哒哒哒哒多多多多多多多多</div>
+                    <div class="names">用户名称</div>
                     <div class="names-rank">
                       <span class="names-rank-style">管理员</span>
                     </div>
@@ -85,15 +85,15 @@
             </el-menu-item>
             <el-menu-item index="view">
               <i class="el-icon-view"></i>
-              <span slot="title">资讯管理</span>
+              <span slot="title">管理</span>
             </el-menu-item>
             <el-menu-item index="videocamera">
               <i class="el-icon-video-camera"></i>
-              <span slot="title">影像志</span>
+              <span slot="title">影像管理</span>
             </el-menu-item>
             <el-menu-item index="headset">
               <i class="el-icon-headset"></i>
-              <span slot="title">媒体师大</span>
+              <span slot="title">媒体管理</span>
             </el-menu-item>
             <el-menu-item index="edit">
               <i class="el-icon-edit"></i>
@@ -145,36 +145,36 @@
 <script>
 export default {
   name: 'about',
-  data () {
+  data() {
     return {
       isCollapse: false,
       visible: false,
-      errorHandler () {
+      errorHandler() {
         return true
       }
     }
   },
   methods: {
-    handleOpen (key, keyPath) {
+    handleOpen(key, keyPath) {
     },
-    handleClose (key, keyPath) {
+    handleClose(key, keyPath) {
     },
-    handleSelect (key, keyPath) {
+    handleSelect(key, keyPath) {
       if (key === '') {
         this.isCollapse = false
       }
     },
-    mymessage () {
+    mymessage() {
       this.$router.push('/about/mymessage')
     },
-    mypassword () {
+    mypassword() {
       this.$router.push('/about/mypassword')
     },
-    exitlogin () {
+    exitlogin() {
       this.$router.push('/login')
       this.visible = false
     },
-    handleCommand (command) {
+    handleCommand(command) {
       if (command === 'a') {
         this.$router.push('/about/mymessage')
       } else if (command === 'b') {

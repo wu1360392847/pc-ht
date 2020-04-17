@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <div class="login-frombox">
-      <div class="frombox-title">统一用户中心</div>
+      <div class="frombox-title">登录</div>
       <div>
         <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" label-width="0" class="demo-ruleForm">
           <el-form-item label prop="name">
@@ -38,7 +38,7 @@
 <script>
 export default {
   name: 'login',
-  data () {
+  data() {
     var validateName = (rule, value, callback) => {
       if (value === '') {
         callback(new Error('请输用户名'));
@@ -81,7 +81,7 @@ export default {
     };
   },
   methods: {
-    submitForm (formName) {
+    submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           console.log(this.ruleForm);
@@ -93,7 +93,7 @@ export default {
         }
       });
     },
-    invisibilityClick () {
+    invisibilityClick() {
     }
   }
 
